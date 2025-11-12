@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smash Trophy Maker</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+
+        <audio id="bg-music" src="src/bg-music.mp3" loop></audio>
+        <div class="trophy-body"> 
+            <div class="info">
+                <span class="name">
+                    <p contenteditable="true">Character Name</p>
+                    <hr>
+                </span>
+                <div class="info2">
+                    <textarea type="text" placeholder="Description"></textarea>
+                    <hr>
+                    <div class ="appearances">
+                        <img class="logo" id="logo1" onclick="uploadImage('logo1')"></img>
+                        <p contenteditable="true"> Featured Apperance</p>
+                        <p contenteditable="true"> Date</p>
+                    </div>
+                    <div class ="appearances">
+                        <img class="logo" id="logo2" onclick="uploadImage('logo2')"></img>
+                        <p contenteditable="true"> Featured Apperance</p>
+                        <p contenteditable="true"> Date</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trophy">
+                <img class="character" id="char" onclick="uploadImage('char')"></img>
+                <img class="tbase" src="src/base.png"></img>
+            </div>
+        </div>
+        <h3>Trophy Dashboard</h3>
+        <hr>
+        <div class="dashboard">        
+            <div class="controls">
+                <p>Background Music</p>
+                <button onclick="backgroundMusic('play')">Play Music</button>
+                <button onclick="backgroundMusic('pause')">Pause Music</button>
+                <button onclick="backgroundMusic('stop')">Stop Music</button>
+            </div>
+
+            <div class="controls">
+            <p>Image Position</p>
+            <button onclick="adjustImagePosition('up')">Up</button>
+            <button onclick="adjustImagePosition('down')">Down</button>
+            <button onclick="adjustImagePosition('left')">Left</button>
+            <button onclick="adjustImagePosition('right')">Right</button>
+            </div>
+
+            <div class="controls">
+            <p>Image Size</p>
+            <button onclick="adjustImageSize('w-')">W−</button>
+            <button onclick="adjustImageSize('w+')">W+</button>
+            <button onclick="adjustImageSize('h-')">H−</button>
+            <button onclick="adjustImageSize('h+')">H+</button>            
+            </div>
+
+            <div class="controls">
+            <p>Logo</p>
+            <button onclick="logoSettings('logo1', 'remove')">Remove Logo 1</button>
+            <button onclick="logoSettings('logo2', 'remove')">Remove Logo 2</button> 
+            <button onclick="logoSettings('logo1', 'show')">Show Logo 1</button>
+            <button onclick="logoSettings('logo2', 'show')">Show Logo 2</button> 
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

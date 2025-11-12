@@ -1,0 +1,119 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    color: white
+}
+
+body {
+    background-image: url(src/bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;      
+}
+
+.trophy-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;       
+    margin: 0;               
+    gap: 16px;
+    overflow: hidden;       
+}
+
+.trophy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;   
+    justify-content: flex-start;
+    order: 0;                  
+}
+
+.tbase{                       
+    width: 282px;
+    height: 87px;
+    z-index: 1;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-end;  
+    order: 1;
+    z-index: 3;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.character{
+    position: relative;
+    width: 282px;
+    height: 282px;
+    margin-bottom: -45px;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 1.0;
+}
+
+.info2 > div {
+    display: flex;           
+    align-items: center;     
+    gap: 8px;      
+}
+
+.appearances{
+    background-color: rgba(29, 26, 54, 0.5);    
+}
+
+.appearances > p, img{
+    opacity: 0.8;
+}
+
+
+
+.logo{
+    display: inline-block;
+    width: 63px;
+    height: 43px;
+    object-fit: contain;     
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+
+.controls {
+    order:2;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    gap: 8px;
+}
+
+textarea {
+    font-size: 18px;
+    border: 0;
+    background-color: transparent;
+}
+
+button, .character, .logo {
+    color: black;
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid #294253;
+}
