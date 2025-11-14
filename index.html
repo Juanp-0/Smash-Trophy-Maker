@@ -6,7 +6,7 @@
     </head>
     <body>
 
-        <audio id="bg-music" src="src/bg-music.mp3" loop></audio>
+        <audio id="bg-music" src="src/bg_music/track1.mp3" loop></audio>
         <div class="trophy-body"> 
             <div class="info">
                 <span class="name">
@@ -35,9 +35,34 @@
         </div>
         <h3>Trophy Dashboard</h3>
         <hr>
-        <div class="dashboard">        
+        <div class="dashboard"> 
+            <div class="controls">
+                <p>Background Image</p>
+                <form>
+                    <select id="bg-select" onchange="changeBackground('src/backgrounds/' + this.value)">
+                        <option value="bg1.png">SSBB Background 1</option>
+                        <option value="bg2.png">SSBB Background 2</option>
+                        <option value="bg3.png">SSBB Background 3</option>
+                        <option value="bg4.png">SSBB Background 4</option>
+                        <option value="bg5.png">SSBB Background 5</option>
+                        <option value="bg6.png">SSBM Background 1</option>
+                        <option value="bg7.png">SSBM Background 2</option>
+                        <option value="bg8.png">SSBM Background 3</option>
+                    </select>
+                </form>
+            </div>
+
             <div class="controls">
                 <p>Background Music</p>
+                <form>
+                    <select id="bg-select-music" onchange="document.getElementById('bg-music').src = 'src/bg_music/' + this.value">
+                        <option value="track1.mp3">SSBB Trophy Gallery</option>
+                        <option value="track2.mp3">Sticker Album/Album/Chronicle</option>
+                        <option value="track3.mp3">SSBB All-Star Rest Area</option>
+                        <option value="track4.mp3">SSBM Trophy Gallery</option>
+                        <option value="track5.mp3">SSBM All-Star Rest Area</option>             
+                    </select>
+                </form>
                 <button onclick="backgroundMusic('play')">Play Music</button>
                 <button onclick="backgroundMusic('pause')">Pause Music</button>
                 <button onclick="backgroundMusic('stop')">Stop Music</button>

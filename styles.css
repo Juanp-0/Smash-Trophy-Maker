@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(src/bg.png);
+    background-image: url(src/backgrounds/bg1.png);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ textarea {
     background-color: transparent;
 }
 
-button, .character, .logo {
+button, .character, .logo, select, option {
     color: black;
     cursor: pointer;
 }
