@@ -10,7 +10,8 @@ The **Trophy Dashboard** allows you to fully customize your trophy:
 
 | Feature              | Description                                                                 |
 |----------------------|-----------------------------------------------------------------------------|
-|  Background Music   | Play, pause, or stop the website’s background music.                        |
+|  Background Image   | Change the website’s background image.                        |
+|  Background Music   | Change, play, pause, or stop the website’s background music.                        |
 |  Image Position      | Move the character image **Up, Down, Left, or Right**.                      |
 |  Image Size          | Adjust the **height and width** of the character image.                     |
 |  Logos              | Show or remove logos from featured appearance sections.                     |
