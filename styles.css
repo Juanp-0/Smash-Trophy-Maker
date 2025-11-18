@@ -1,14 +1,15 @@
 *{
     font-family: 'Noto Sans', sans-serif;
-    color: white
+    color: inherit;
 }
 
 body {
-    background-image: url(src/backgrounds/bg1.png);
+    background-image: url(src/backgrounds/ssbbbg1.png);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;      
+    background-attachment: fixed;
+    color: white;      
 }
 
 .trophy-body {
@@ -18,7 +19,8 @@ body {
     min-height: 100vh;       
     margin: 0;               
     gap: 16px;
-    overflow: hidden;       
+    overflow: hidden;      
+    color: inherit; 
 }
 
 .trophy{
@@ -70,7 +72,8 @@ body {
 }
 
 .appearances{
-    background-color: rgba(29, 26, 54, 0.5);    
+    background-color: rgba(29, 26, 54, 0.5);
+    color:white;
 }
 
 .appearances > p, img{
@@ -93,6 +96,7 @@ body {
     display: flex;
     flex-direction: column;
     order: 1;
+    color: inherit;
 }
 
 .controls {
@@ -109,7 +113,11 @@ textarea {
     background-color: transparent;
 }
 
-button, .character, .logo, select, option {
+.character, .logo{
+    cursor: pointer;
+}
+
+button,  select, option {
     color: black;
     cursor: pointer;
 }

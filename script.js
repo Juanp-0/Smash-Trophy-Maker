@@ -111,5 +111,16 @@ function backgroundMusic(state) {
 
 function changeBackground(imagePath) {
     document.body.style.backgroundImage = `url(${imagePath})`;
+
+    const darkTextBackgrounds = [
+        'ssb4bg4.png',
+        'ssb4bg5.png'
+    ];
+
+    if (darkTextBackgrounds.some(bg => imagePath.includes(bg))) {
+        document.body.style.color = 'black';
+    } else {
+        document.body.style.color = 'white';
+    }
 }
 
